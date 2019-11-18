@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -67,12 +66,12 @@
 
 
 
-<div>
+	<div>
         <div id="PositionSection" class="Position">
         </div>
 
-<table id="board" draggable="false"></table>
-</div>
+		<table id="board" draggable="false"></table>	
+	</div>
 </body>
 <script src="./Position.js"></script>
 <script type="text/javascript">
@@ -102,7 +101,7 @@
                 currentHTMLRow += `<td draggable="false" id="${newNodeId}" class="Unvisited"></td>`;
             }
             tableHTML += `${currentHTMLRow}</tr>`;
-        }
+        }	
         let board = document.getElementById("board");
         board.innerHTML = tableHTML;
 
